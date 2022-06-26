@@ -78,6 +78,9 @@ $(document).ready(function () {
         })
     })
 
+    // Input type number
+    
+
 });
 
 // City Select
