@@ -92,6 +92,8 @@ a:hover {
 }
 
 .btn-primary {
+  font-size: 20px;
+  font-weight: 500;
   background-color: var(--cam);
   color: #fff;
   border-color: var(--cam);
@@ -100,10 +102,12 @@ a:hover {
 .btn-primary:hover {
   background-color: var(--xanh);
   border-color: var(--xanh);
-  color: #fff;
+  color: var(--cam);
 }
 
 .btn-primary2 {
+  font-size: 20px;
+  font-weight: 500;
   background-color: var(--xanh);
   color: #fff;
   border-color: var(--xanh);
@@ -112,7 +116,7 @@ a:hover {
 .btn-primary2:hover {
   background-color: var(--cam);
   border-color: var(--cam);
-  color: #fff;
+  color: var(--xanh);
 }
 
 #cart-container table tbody tr:last-child td {
@@ -765,12 +769,14 @@ a:hover {
     margin-top: 40%;
     margin-bottom: 60%;
     background-color: transparent !important;
+    border: 0 !important;
   }
 
   /* Cart page */
   #cart-container {
     overflow-x: auto;
   }
+
 
   #cart-container table {
     white-space: nowrap;
@@ -798,6 +804,7 @@ a:hover {
   #total-cart {
     font-size: 16px;
     font-weight: 450;
+    overflow-x: hidden !important;
   }
 
 

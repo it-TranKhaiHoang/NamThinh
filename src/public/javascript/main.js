@@ -78,8 +78,18 @@ $(document).ready(function () {
         })
     })
 
-    // Input type number
-    
+    // Zoom image
+
+
+    $(function () {
+        $('.carousel-item').each(function () {
+            var originalImagePath = $(this).find('img').data('original-image');
+            $(this).zoom({
+                url: originalImagePath,
+                magnify: 3
+            });
+        });
+    });
 
 });
 
@@ -184,12 +194,4 @@ $('.owl-carousel').owlCarousel({
 
 
 
-$(function () {
-    $('.zoom-image').each(function () {
-        var originalImagePath = $(this).find('img').data('original-image');
-        $(this).zoom({
-            url: originalImagePath,
-            magnify: 1
-        });
-    });
-});
+
